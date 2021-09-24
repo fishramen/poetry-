@@ -1,7 +1,7 @@
 # poetry-
 a repository to share my code for a random poem generator :)
 
-For this project, I decided to pull excerpts from Lewis Carroll's 'Alice's Adventures in Wonderland.' My idea, just the like story and characters in the novel are pretty nonsensical and crazy, I would create a poem with a similar feel. The sentences pulled from the book are shuffled and, under certain conditions, some words appear backwards or emphasized in order to create chaos and madness within the generated poem. 
+For this project, I decided to pull excerpts from Lewis Carroll's 'Alice's Adventures in Wonderland.' My idea, just the like story and characters in the novel are pretty nonsensical and crazy, was to create a poem with a similar feel. The sentences are randomly pulled from the book, shuffled, and, under certain conditions, some words within the sentence appear backwards or emphasized in order to create chaos and madness within the generated poem. 
 
 code sources/insp:
 
