@@ -1,0 +1,43 @@
+with open('/content/drive/MyDrive/alice in wonderland.txt') as f: 
+  text = f.read()
+  #print(text)
+
+from textblob import TextBlob
+import nltk
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('brown')
+
+blob = TextBlob(text)
+tagged_words = blob.tags
+sentence_list = blob.sentences
+phrases_list = blob.noun_phrases
+
+import random
+from random import randint
+
+sentence = random.choice(blob.sentences)
+#words = sentence.split()
+#print(words)
+#print(random.choice(blob.sentences))
+
+#resentence = '\n'.join(random.choice(blob.sentences))
+#print(sentence)
+
+words = sentence.split()
+random.shuffle(words)
+#print(words)
+
+resentence = '\n'.join(words)
+print(resentence)
+
+for word in words:
+  shuffleTest = randint(0,1)
+  drow = ''
+  if (shuffleTest>0.3):
+    for i in word:
+      drow = i + drow
+    print(drow)
+  else:
+      word += '!'
+  print(word)
